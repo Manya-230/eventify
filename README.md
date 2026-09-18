@@ -1,16 +1,51 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+# Eventify
 
-Currently, two official plugins are available:
+### Find your next experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Eventify is a modern event discovery and booking platform built with React.js. Explore concerts, DJ nights, festivals, workshops, and more through a clean and responsive interface.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Browse and discover events
+- Search and filter events
+- View event details and ticket prices
+- Ticket booking flow
+- Wishlist and saved events
+- User profile and booking history
+- Responsive design for all devices
+- Smooth animations and interactive UI
 
-## Expanding the Oxlint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- React.js
+- JavaScript
+- Vite
+- Tailwind CSS
+- React Router
+- Framer Motion
+- Recharts
+- Lucide React
+
+## Getting Started
+
+```bash
+git clone https://github.com/Manya-230/eventify.git
+cd eventify
+npm install
+npm run dev
+```
+
+## Future Improvements
+
+- Backend integration
+- Real-time ticket availability
+- Payment gateway
+- Event organizer dashboard
+- QR code ticket verification
+
+## Author
+
+**Manya Gehlot**
+
+[GitHub](https://github.com/Manya-230)
