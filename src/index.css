@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-dark: #090B10;
+    --bg-card: #12151E;
+    --bg-card-hover: #191D2B;
+    --border-color: #232838;
+    --accent-violet: #8B5CF6;
+    --accent-violet-light: #A855F7;
+    --accent-violet-glow: rgba(139, 92, 246, 0.25);
+  }
+
+  body {
+    background-color: var(--bg-dark);
+    color: #F3F4F6;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: 'Outfit', sans-serif;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #090B10;
+}
+::-webkit-scrollbar-thumb {
+  background: #232838;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3B4259;
+}
+
+/* Glassmorphism helpers */
+.glass-panel {
+  background: rgba(18, 21, 30, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-nav {
+  background: rgba(9, 11, 16, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.glass-card {
+  background: rgba(18, 21, 30, 0.6);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.glass-card:hover {
+  background: rgba(25, 29, 43, 0.8);
+  border-color: rgba(139, 92, 246, 0.3);
+}
+
+/* Gradient Text */
+.text-gradient {
+  background: linear-gradient(135deg, #FFFFFF 0%, #A5B4FC 50%, #C084FC 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-accent-gradient {
+  background: linear-gradient(135deg, #A855F7 0%, #EC4899 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glow & Shimmer */
+.glow-accent {
+  box-shadow: 0 0 30px rgba(139, 92, 246, 0.25);
+}
+
+.glow-card {
+  transition: all 0.3s ease;
+}
+
+.glow-card:hover {
+  box-shadow: 0 10px 30px -10px rgba(139, 92, 246, 0.3);
+  transform: translateY(-3px);
+}
+
+/* Hide scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom Checkbox / Radio styling */
+input[type="checkbox"]:checked {
+  background-color: #8B5CF6;
+  border-color: #8B5CF6;
+}
